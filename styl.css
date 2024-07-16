@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Sawarabi Mincho', serif;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 2;
+    background-color: black;
+    font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+img {
+    vertical-align: text-bottom;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #3d292948;
+}
+header:hover{
+background-color: #00000056;
+}
+.logo{
+    width: 300px;
+    margin-left: 15px;
+    transition: all 0.3s;
+}
+a:hover .logo{
+    transform: scale(1.1);
+}
+.footer-circle li:before {
+  position:absolute;
+  content:'';
+  top: 0.4em;
+  left: 0.2em;
+  height:0;
+  width:0;
+  border-style: solid;
+  border-width: 6px 0 6px 9px;
+  border-color: transparent transparent transparent #333333;
+}
+
+.nav li a {
+  color: #ffffff8e;
+  text-decoration: none;
+  position: relative;
+}
+.nav .itme a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffffff8e;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform 0.3s;
+}
+.nav .itme a:hover::after {
+  transform: scale(1, 1);
+}
+.nav li .icon:hover img{
+    transform: scale(1.3);
+}
+ul li img{
+    width: 50px;
+    transition: all 0.3s;
+}
+#wrap {
+    clear: both;
+}
+
+.nav {
+    display: flex;
+    margin-top: 24px;
+}
+
+.nav li {
+    margin: 0 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+footer {
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer small {
+    font-size: 14px;
+}
+
+#main-content {
+    background-image: url('img/ゲゲゲre.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 150vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.catch{
+    width: 700px;
+    height: 1040px;
+    margin-left: 800px;
+}
+.scroll-infinity {
+    position: relative;
+    z-index: 0; /* .scroll-infinityのz-indexを下げる */
+}
+
+#sub-content {
+    background-image: url("img/IMG_7520.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+
+}
+.overlay2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); /*黒いオーバーレイ、最後の0.7が透明度を表す  */
+    z-index: 1; /* オーバーレイを背景よりも前に表示 */
+}
+#sub-content h3 {
+    position: relative;
+    z-index: 2; 
+    color: #fb3f00;
+    font-size: 60px;
+}
+#index h3{
+font-size: 57px;
+text-align: center;
+}
+#index .sub{
+position: relative;
+    z-index: 2; 
+    text-align: center;
+}
+#sub-content p{
+    color: #fff;
+    font-weight: bold;
+}
+#sub-content span{
+    color: #ebe655;
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+}
+.last img{
+    margin-top: 40px;
+    width: 580px;
+    height: auto;
+}
+.last{
+    text-align: center;
+}
+
+.middle{
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 200vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.middle .contents{
+    width: 600px;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+}
+.middle p{
+    display: inline-block;
+    text-align: left;
+}
+.middle h2{
+    color: #fb3f00;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+.fadeUp{
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    text-align: left;
+}
+.txt{
+    text-align: left;
+}
+.txt .up{
+color: #ebe655;
+font-size: 23px;
+font-weight: bold;
+text-align: center;
+}
+
+/* トップに戻るボタンの初期スタイル */
+#top-link {
+    position: fixed; /* 画面に固定 */
+    bottom: -50px; /* 画面外に隠す */
+    right: 20px; /* 画面右側からの距離 */
+    z-index: 1000; /* 他の要素より上に表示 */
+    transition: bottom 0.3s; /* アニメーションを追加 */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+/* 画像のスタイル */
+#top-link img {
+    width: 50px; /* 画像の幅 */
+    height: auto; /* 高さを自動調整 */
+}
+
+/* カーソルが画像の上にあるときのスタイル */
+#top-link:hover {
+    bottom: 20px; /* 一部を表示 */
+}

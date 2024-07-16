@@ -1,0 +1,215 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.char {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 330vh;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: auto;
+}
+.char2{
+    background-image: url("../img/bg.png");
+    height: auto;
+}
+#Char1 .char{
+    height: 450vh;
+    width: 80%;
+}
+.all{
+    text-align: center;
+}
+h2{
+    color: #c20000;
+    font-size: 60px;
+}
+.char-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.char-list .fade{
+    width: 30%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+.char-image{
+    border-radius: 50%;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    background-color: white;
+    display: block;
+    margin: 9px auto;
+    overflow: hidden;
+}
+
+.sampY {
+    position: relative; /* 相対位置指定 */
+    display: inline-block; /* インラインブロック要素に設定 */
+}
+
+.sampY img {
+    position: relative; /* 画像の位置を設定 */
+    z-index: 1; /* 画像を手前に表示 */
+}
+
+.sampY::before {
+    content: ""; /* コンテンツなし */
+    position: absolute; /* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* 初期状態は透明 */
+    z-index: 2;
+}
+
+.sampY::after {
+    content: "MORE"; /* 追加コンテンツ */
+    position: absolute; /* 絶対位置指定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 中央に配置 */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(225, 241, 0, 0); /* 初期状態は透明 */
+    color: #000;
+    letter-spacing: -1px !important;
+    z-index: 3;
+    opacity: 0; /* 初期状態は非表示 */
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* エフェクトのトランジション */
+    width: 80%; /* 固定サイズで設定 */
+    height: 90%; /* 固定サイズで設定 */
+    border-radius: 50%; /* 円形にする */
+}
+.sampY:hover::after {
+    opacity: 1; /* ホバー時に表示 */
+    background-color: rgba(225, 241, 0, 0.7); /* ホバー時の背景色 */
+}
+
+.char-list .fade a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+figcaption {
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cv {
+    margin-top: 0.2rem;
+    display: block;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+}
+.cv .en{
+    background-color: rgba(225, 225, 225, 0.7);
+    color: #000;
+    border-radius: 30px;
+    padding: 0 10px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: .7em;
+    line-height: 1.6em;
+    margin-bottom: 2px;
+    
+}
+.en{
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    letter-spacing: -1px !important;
+    font-weight: 700;
+}
+
+.weapp img{
+    width: auto;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 1000px;
+    height: 90%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+
+.weapp{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.Img, .profile{
+    width: 45%;
+}
+.profile{
+    width: 55%;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.weapp > *{
+    flex-direction: row;
+}
+.Img{
+    width: 45%;
+    flex-grow: 1;
+    margin-top: 120px;
+    margin-right: 0;
+    width: 500px;
+    height: 800px;
+}
+
+.weapp h1{
+    font-weight: bold;
+    color: yellow;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+.weapp p{
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+}
+.ph{
+    width: 500px;
+    height: 500px;
+    margin:0;
+    display: block;
+    margin-top: 10px;
+}
+.beside{
+    display: flex;
+}
+.weapp .cv{
+    font-size: 25px;
+    margin-top: 53px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.txt{
+    margin-bottom: 80px;
+    margin-right: 40px;
+    font-size: 1.09rem;
+    font-weight: 600;
+    line-height: 2em;
+}

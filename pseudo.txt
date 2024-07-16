@@ -1,0 +1,11 @@
+index.html
+・headerにホバーを付けた
+・headerのlogoクラス、iconクラスにカーソルを合わせたら大きくなる
+・itmeクラスにカーソルを合わせたら真ん中からボーダーが出る
+.目玉おやじのひょっこりはんにホバーつけた
+ナビのSTORY、INTRODUCEはページ内遷移
+hero.html
+・headerにホバーを付けた
+・itmeクラスにカーソルを合わせたら真ん中からボーダーが出る
+・headerのlogoクラス、iconクラスにカーソルを合わせたら大きくなる
+・sampYクラスにhover::afterを付けた
